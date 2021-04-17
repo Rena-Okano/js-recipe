@@ -17,19 +17,13 @@
         <div class="card" id="primary-card">
           こんにちは
         </div>
-        <div class="card">こんばんは</div>
+        <div class="card">こんばんは
+          const card = document.getElementById('primary-card')
+
+card.innerHTML = '<span style="font-weight:bold">こんばんは</span>'
+</div>
       </div>;
-      // idをもとに要素を ひとつだけ 取得する。
-      const card1 = document.getElementById("primary-card");
-      console.log(card1);
-
-      // CSSのセレクタに合致する要素を ひとつだけ 取得する。
-      const card2 = document.querySelector(".card");
-      console.log(card2);
-
-      // CSSのセレクタに合致する要素を すべて 取得する。
-      const cards = document.querySelectorAll(".card");
-      console.log(cards);
+      
       // JavaScript
     </script>
   </body>
