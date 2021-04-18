@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>クイズ</title>
+  </head>
+  <body>
+    <img
+      src="https://s3-ap-northeast-1.amazonaws.com/petpedia/upload_by_admin/toy_poodle_image_0_800.jpg"
+    />
+    <div id="display">私が飼っているペットの犬種は？</div>
+    <button id="button1">チワワ</button>
+    <button id="button2">トイプードル</button>
+    <script>
+      const display = document.getElementById("display")
+      const button = document.getElementById("button")
+
+      button1.onclick = function() {
+        display.textContent = "不正解！！"
+      }
+
+      button2.onclick = function() {
+        display.textContent = "正解!!"
+      }
+    </script>
+  </body>
+</html>
