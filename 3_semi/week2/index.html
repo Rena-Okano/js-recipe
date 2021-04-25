@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <input type="text" id="memo-input" />
+      <button id="add-button"></button>
+    </div>
+    <div id="memo-container"></div>
+    ​
+    <script>
+      const memoInput = document.getElementById("memo-input")
+      const addbutton = document.getElementById("add-button")
+      const memocontainer = document.getElementById("memo-container")
+      addbutton.onclick = function() {
+        const text = memoInput.value
+        const card = document.createElement("div")
+        card.className = "card"
+        card.textContent = text
+
+        memocontainer.append(card)
+      }
+    </script>
+  </body>
+</html>
