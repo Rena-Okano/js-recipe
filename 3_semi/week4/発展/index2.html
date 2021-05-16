@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="computed-recalculate">
+      <h3>computed 再計算</h3>
+      <div v-for="item in items">
+        <span>
+          {{ item.price }} 円の {{ item.name }} が {{ item.amount }}
+          個あります。
+        </span>
+        <button v-on:click="addItem(item)">＋１個</button>
+      </div>
+      <div>全部で{{ totalPrice }}円です。</div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="main2.js"></script>
+  </body>
+</html>
